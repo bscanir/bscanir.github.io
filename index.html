@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<title>بارکدساز اسنپ مارکت</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/fontiran.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/bcode.js"></script>
+	<style>
+	.bcode{
+		border: 2px solid black;
+    padding: 30px;
+    margin-bottom: 10px;
+	}
+	.btxt{
+		font-size: 14px;
+		margin-top: -10px;
+	}
+	</style>
+</head>
+<body>
+<div id="main">
+	<div id="frame">
+		<div id="wrap">
+			<span class="login100-form-title p-b-49">بارکدساز اسنپ مارکت</span>
+			<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
+				<span class="label-input100">شماره بارکد</span>
+				<input class="input100" type="number" name="username" placeholder="اعداد فارسی و انگلیسی قبوله">
+				<span class="focus-input100" data-symbol="&#xf206;"></span>
+			</div>
+			<div class="container-login100-form-btn">
+				<div class="wrap-login100-form-btn">
+				<div class="login100-form-bgbtn"></div>
+				<button class="login100-form-btn">ساخت بارکد</button>
+				</div>
+			</div>
+			<div class="txt1 text-center p-t-54 p-b-20">
+				<p>اسکنر معمولی</p>
+				<div class="bcode">
+					<svg id="snreset"></svg>
+					<p class="btxt">بازنشانی کارخانه</p>
+				</div>
+				<div class="bcode">
+					<svg id="snoff"></svg>
+					<p class="btxt">خاموش کردن</p>
+				</div>
+			</div>
+			<div class="txt1 text-center p-t-54 p-b-20">
+				<p>اسکنر تفنگی</p>
+				<div class="bcode">
+					<svg id="sgreset"></svg>
+					<p class="btxt">بازنشانی کارخانه</p>
+				</div>
+				<div class="bcode">
+					<svg id="sgbt"></svg>
+					<p class="btxt">کیبورد بلوتوث</p>
+				</div>
+				<div class="bcode">
+					<svg id="sgcr"></svg>
+					<p class="btxt">اضافه کردن CR + LF</p>
+				</div>
+				<div class="bcode">
+					<svg id="sgoff"></svg>
+					<p class="btxt">خاموش کردن</p>
+				</div>
+			</div>
+			<script>
+				JsBarcode("#snreset", "$$%^1207", {format: "code128", displayValue: false});
+				JsBarcode("#snoff", "$$%^5300", {format: "code128", displayValue: false});
+				JsBarcode("#sgreset", "09321175", {format: "code128", displayValue: false});
+				JsBarcode("#sgbt", "SX00", {format: "code128", displayValue: false});
+				JsBarcode("#sgcr", "090300", {format: "code128", displayValue: false});
+				JsBarcode("#sgoff", "SX03", {format: "code128", displayValue: false});
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+</html>
