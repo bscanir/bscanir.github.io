@@ -65,8 +65,18 @@
 				JsBarcode("#sgbt", "SX00", {format: "code128", displayValue: false});
 				JsBarcode("#sgcr", "090300", {format: "code128", displayValue: false});
 				JsBarcode("#sgoff", "SX03", {format: "code128", displayValue: false});
+				function fa2en(num) {
+					var fa = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+					var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+					var cache = num;
+					for (var i = 0; i < 10; i++) {
+					var reg = new RegExp(fa[i], 'g');
+						cache = cache.replace(reg, en[i]);
+					}
+					return cache;
+				}
 				function gencode(){
-					JsBarcode("#usrcode", document.getElementById("barcode").value, {format: "code128"});
+					JsBarcode("#usrcode", fa2en(document.getElementById("barcode").value), {format: "code128"});
 				}
 			</script>
 		</div>
