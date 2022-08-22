@@ -4,39 +4,27 @@
 	<meta charset="UTF-8">
 	<title>بارکدساز اسنپ مارکت</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/fontiran.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/bcode.js"></script>
-	<style>
-	.bcode{
-		border: 2px solid black;
-    padding: 30px;
-    margin-bottom: 10px;
-	}
-	.btxt{
-		font-size: 14px;
-		margin-top: -10px;
-	}
-	</style>
 </head>
 <body>
 <div id="main">
 	<div id="frame">
 		<div id="wrap">
-			<span class="login100-form-title p-b-49">بارکدساز اسنپ مارکت</span>
-			<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
-				<span class="label-input100">شماره بارکد</span>
-				<input class="input100" type="number" name="username" placeholder="اعداد فارسی و انگلیسی قبوله">
-				<span class="focus-input100" data-symbol="&#xf206;"></span>
+			<h1 id="title">بارکدساز اسنپ مارکت</h1>
+			<div id="barwrap">
+				<span id="barlabel">شماره بارکد</span>
+				<input id="barcode" name="barcode" type="number" autocomplete="off" placeholder="اعداد فارسی و انگلیسی قبوله">
+				<span id="barfocus"></span>
 			</div>
-			<div class="container-login100-form-btn">
-				<div class="wrap-login100-form-btn">
-				<div class="login100-form-bgbtn"></div>
-				<button class="login100-form-btn">ساخت بارکد</button>
+			<div id="btndiv">
+				<div id="btnwrap">
+					<div id="btnbg"></div>
+					<button id="btninput">ساخت بارکد</button>
 				</div>
 			</div>
-			<div class="txt1 text-center p-t-54 p-b-20">
+			<div class="bars">
 				<p>اسکنر معمولی</p>
 				<div class="bcode">
 					<svg id="snreset"></svg>
@@ -47,7 +35,7 @@
 					<p class="btxt">خاموش کردن</p>
 				</div>
 			</div>
-			<div class="txt1 text-center p-t-54 p-b-20">
+			<div class="bars">
 				<p>اسکنر تفنگی</p>
 				<div class="bcode">
 					<svg id="sgreset"></svg>
