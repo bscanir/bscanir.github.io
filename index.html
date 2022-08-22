@@ -4,15 +4,14 @@
 	<meta charset="UTF-8">
 	<title>بارکدساز اسنپ مارکت</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/fontiran.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="js/bcode.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jsbarcode.js"></script>
 </head>
 <body>
 <div id="main">
 	<div id="frame">
 		<div id="wrap">
-			<h1 id="title">بارکدساز اسنپ مارکت</h1>
+			<h1 id="title">بارکدساز اسنپ</h1>
 			<div id="barwrap">
 				<span id="barlabel">شماره بارکد</span>
 				<input id="barcode" name="barcode" type="number" autocomplete="off" placeholder="اعداد فارسی و انگلیسی قبوله">
@@ -21,7 +20,12 @@
 			<div id="btndiv">
 				<div id="btnwrap">
 					<div id="btnbg"></div>
-					<button id="btninput">ساخت بارکد</button>
+					<button id="btninput" onclick="gencode();">ساخت بارکد</button>
+				</div>
+			</div>
+			<div class="bars">
+				<div class="bcode">
+					<svg id="usrcode"></svg>
 				</div>
 			</div>
 			<div class="bars">
@@ -61,6 +65,9 @@
 				JsBarcode("#sgbt", "SX00", {format: "code128", displayValue: false});
 				JsBarcode("#sgcr", "090300", {format: "code128", displayValue: false});
 				JsBarcode("#sgoff", "SX03", {format: "code128", displayValue: false});
+				function gencode(){
+					JsBarcode("#usrcode", document.getElementById("barcode").value, {format: "code128"});
+				}
 			</script>
 		</div>
 	</div>
