@@ -58,36 +58,37 @@
 					<p class="btxt">خاموش کردن</p>
 				</div>
 			</div>
-			<script>
-				JsBarcode("#snreset", "$$%^1207", {format: "code128", displayValue: false});
-				JsBarcode("#snoff", "$$%^5300", {format: "code128", displayValue: false});
-				JsBarcode("#sgreset", "09321175", {format: "code128", displayValue: false});
-				JsBarcode("#sgbt", "SX00", {format: "code128", displayValue: false});
-				JsBarcode("#sgcr", "090300", {format: "code128", displayValue: false});
-				JsBarcode("#sgoff", "SX03", {format: "code128", displayValue: false});
-				function fa2en(num) {
-					var fa = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-					var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-					var cache = num;
-					for (var i = 0; i < 10; i++) {
-					var reg = new RegExp(fa[i], 'g');
-						cache = cache.replace(reg, en[i]);
-					}
-					return cache;
-				}
-				var input = document.getElementById("barcode");
-				input.addEventListener("keypress", function(event) {
-					if (event.key === "Enter") {
-						event.preventDefault();
-						document.getElementById("btninput").click();
-					}
-				});
-				function gencode(){
-					JsBarcode("#usrcode", fa2en(document.getElementById("barcode").value), {format: "code128"});
-				}
-			</script>
+			<p>طراحی با ❤️ توسط <a href="https://instagram.com/sh.masroor" target="_blank" rel="nofollow">حسین مسرور</a><br>از نیروی های نه چندان خوب هایپراستار تیراژه ۲ 😁</p>
 		</div>
 	</div>
 </div>
+<script>
+	JsBarcode("#snreset", "$$%^1207", {format: "code128", displayValue: false});
+	JsBarcode("#snoff", "$$%^5300", {format: "code128", displayValue: false});
+	JsBarcode("#sgreset", "09321175", {format: "code128", displayValue: false});
+	JsBarcode("#sgbt", "SX00", {format: "code128", displayValue: false});
+	JsBarcode("#sgcr", "090300", {format: "code128", displayValue: false});
+	JsBarcode("#sgoff", "SX03", {format: "code128", displayValue: false});
+	function fa2en(num) {
+		var fa = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+		var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+		var cache = num;
+		for (var i = 0; i < 10; i++) {
+		var reg = new RegExp(fa[i], 'g');
+			cache = cache.replace(reg, en[i]);
+		}
+		return cache;
+	}
+	var input = document.getElementById("barcode");
+	input.addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			document.getElementById("btninput").click();
+		}
+	});
+	function gencode(){
+		JsBarcode("#usrcode", fa2en(document.getElementById("barcode").value), {format: "code128"});
+	}
+</script>
 </body>
 </html>

@@ -99,33 +99,21 @@ body, html {
 	padding-bottom: 50px;
 }
 
-a {
-	font-family: IRANSans, Tahoma;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-}
-
-a:focus {
-	outline: none !important;
-}
-
-a:hover {
-	text-decoration: none;
-  color: #a64bf4;
-}
-
 p {
 	font-family: IRANSans, Tahoma;
 	font-size: 18px;
 	line-height: 1.7;
 	color: #666666;
 	margin: 0px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
 }
 
 input {
@@ -214,8 +202,6 @@ button:hover {
 	text-align: center;
 }
 
-
-/*---------------------------------------------*/
 #barfocus {
   position: absolute;
   display: block;
