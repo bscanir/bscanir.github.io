@@ -64,12 +64,12 @@
 	</div>
 </div>
 <script>
-	JsBarcode("#snreset", "$$%^1207", {format: "code128", displayValue: false});
-	JsBarcode("#snoff", "$$%^5300", {format: "code128", displayValue: false});
-	JsBarcode("#sgreset", "09321175", {format: "code128", displayValue: false});
-	JsBarcode("#sgbt", "SX00", {format: "code128", displayValue: false});
-	JsBarcode("#sgcr", "090300", {format: "code128", displayValue: false});
-	JsBarcode("#sgoff", "SX03", {format: "code128", displayValue: false});
+	JsBarcode("#snreset", "\xC9$$%^1207", {format: "code128", displayValue: false});
+	JsBarcode("#snoff", "\xC9$$%^5300", {format: "code128", displayValue: false});
+	JsBarcode("#sgreset", "\xC909321175", {format: "code128", displayValue: false});
+	JsBarcode("#sgbt", "\xC9SX00", {format: "code128", displayValue: false});
+	JsBarcode("#sgcr", "\xC9090300", {format: "code128", displayValue: false});
+	JsBarcode("#sgoff", "\xC9SX03", {format: "code128", displayValue: false});
 	function fa2en(num) {
 		var fa = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
 		var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
