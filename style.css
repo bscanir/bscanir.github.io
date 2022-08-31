@@ -175,24 +175,24 @@ button:hover {
 .bg2 {background-color: #1da1f2}
 .bg3 {background-color: #ea4335}
 
-#barwrap {
+.txtwrap {
   width: 100%;
   position: relative;
 	margin-bottom: 23px;
   border-bottom: 2px solid #d9d9d9;
 }
 
-#barlabel {
+.txtlabel {
   font-family: IRANSans, Tahoma;
-  font-size: 14px;
+  font-size: 18px;
   color: #333333;
   line-height: 1.5;
   padding-left: 7px;
 }
 
-#barcode {
+.txtbox {
   font-family: IRANSans, Tahoma;
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   line-height: 1.2;
   display: block;
@@ -246,19 +246,19 @@ button:hover {
 }
 
 
-#barcode:focus + #barfocus::before {
+.txtbox:focus + #barfocus::before {
   width: 100%;
 }
 
-.has-val#barcode + #barfocus::before {
+.has-val.txtbox + #barfocus::before {
   width: 100%;
 }
 
-#barcode:focus + #barfocus::after {
+.txtbox:focus + #barfocus::after {
   color: #a64bf4;
 }
 
-.has-val#barcode + #barfocus::after {
+.has-val.txtbox + #barfocus::after {
   color: #a64bf4;
 }
 

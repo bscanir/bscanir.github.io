@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>بارکدساز اسنپ مارکت</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css?v=31.05.1401">
+	<link rel="stylesheet" type="text/css" href="style.css?v=09.06.1401">
 	<script src="jsbarcode.js"></script>
 	<link rel="icon" href="img/icon.png">
 </head>
@@ -13,9 +13,9 @@
 	<div id="frame">
 		<div id="wrap">
 			<h1 id="title">بارکدساز اسنپ</h1>
-			<div id="barwrap">
-				<span id="barlabel">شماره بارکد:</span>
-				<input id="barcode" name="barcode" type="number" autocomplete="off" placeholder="اعداد فارسی و انگلیسی قبوله">
+			<div class="txtwrap">
+				<span class="txtlabel">شماره بارکد:</span>
+				<input class="txtbox" id="barcode" type="number" autocomplete="off" placeholder="اعداد فارسی و انگلیسی قبوله">
 				<span id="barfocus"></span>
 			</div>
 			<div id="btndiv">
@@ -29,8 +29,189 @@
 					<svg id="usrcode"></svg>
 				</div>
 			</div>
+			<div class="txtwrap">
+				<span class="txtlabel">لیست کدهای ترازو:</span>
+				<input class="txtbox" type="text" list="fresh" placeholder="اسم میوه، سبزی، آجیل، مرکبات و... را سرچ کنید">
+			</div>
+			<datalist id="fresh">
+				<option>آجیل سویا 752</option>
+				<option>آرد سوخاری 707</option>
+				<option>آرد مرغ 706</option>
+				<option>آرد نخودچی 708</option>
+				<option>آلبالو 287</option>
+				<option>آلو قرمز 271</option>
+				<option>ادویه خورشتی 712</option>
+				<option>ادویه پلویی 711</option>
+				<option>اسمارتیز 772</option>
+				<option>اسپند 782</option>
+				<option>انبه 408</option>
+				<option>انگو یاقوتی 152</option>
+				<option>انگور سفید بی دانه 145</option>
+				<option>انگور سیاه 143</option>
+				<option>انگور عسگری 150</option>
+				<option>انگور قرمز بی دانه 149</option>
+				<option>انگور کندری 162</option>
+				<option>انگور یاقوتی 152</option>
+				<option>بادام درختی خام 729</option>
+				<option>بادام درختی شور 728</option>
+				<option>بادام زمینی آستانه 746</option>
+				<option>بادام زمینی شور 744</option>
+				<option>بادام پوست کاغذی خام 761</option>
+				<option>بادام پوست کاغذی شور 760</option>
+				<option>بادمجان 480</option>
+				<option>بادمجان دلمه 479</option>
+				<option>بادمجان رنگی 2446</option>
+				<option>باقالی 603</option>
+				<option>بامیه 571</option>
+				<option>برنج خوشپخت جی ال 2235</option>
+				<option>برنج دودی سبلان 2236</option>
+				<option>برنج شکسته جی ال 2234</option>
+				<option>برنج طارم سبلان 2240</option>
+				<option>بلال 578</option>
+				<option>بلال 578</option>
+				<option>به 334</option>
+				<option>تخم شربتی 779</option>
+				<option>تخم گشنیز 784</option>
+				<option>تخمه آفتابگردان 730</option>
+				<option>تخمه ژاپنی 725</option>
+				<option>تخمه کدو گوشتی 740</option>
+				<option>تره فرنگی 568</option>
+				<option>تلخون خشک 774</option>
+				<option>تمر هندی 320</option>
+				<option>جعفری خشک 773</option>
+				<option>جو پرک 1778</option>
+				<option>جو پوست کنده 1773</option>
+				<option>خاکشیر 739</option>
+				<option>خربزه 172</option>
+				<option>خرمالو 334</option>
+				<option>خلال بادام 689</option>
+				<option>خیار اصفهان 524</option>
+				<option>خیار درختی 540</option>
+				<option>دال عدس 0691</option>
+				<option>دانه فلفل سیاه 721</option>
+				<option>ذرت 688</option>
+				<option>رازیانه 778</option>
+				<option>راک ملون 175</option>
+				<option>ریواس 575</option>
+				<option>زردآلو 277</option>
+				<option>زردچوبه 714</option>
+				<option>زرشک 686</option>
+				<option>زنجبیل 623</option>
+				<option>زیره سبز 701</option>
+				<option>زیره سیاه 700</option>
+				<option>سیاهدانه 777</option>
+				<option>سیب زرد 102</option>
+				<option>سیب زمینی 610</option>
+				<option>سیب زمینی نامبر وان 616</option>
+				<option>سیب سبز 104</option>
+				<option>سیب قرمز 112</option>
+				<option>سیب گلاب 100</option>
+				<option>سیر 641</option>
+				<option>سیر تازه 544</option>
+				<option>شاهدانه 770</option>
+				<option>شاهپسند 168</option>
+				<option>شلغم 570</option>
+				<option>شلیل 298</option>
+				<option>شلیل انجیری 306</option>
+				<option>شوید خشک 775</option>
+				<option>شکلات سنگی 771</option>
+				<option>طالبی 174</option>
+				<option>عدس 2131</option>
+				<option>فلفل تند 457</option>
+				<option>فلفل دلمه رنگی 453</option>
+				<option>فلفل دلمه سبز 452</option>
+				<option>فلفل رنگی 2449</option>
+				<option>فلفل سیاه 716</option>
+				<option>فلفل قرمز 717</option>
+				<option>فلفل کاپی 478</option>
+				<option>فلفل کاپی قرمز 455</option>
+				<option>فندق تازه 342</option>
+				<option>لواشک پذیرایی 733</option>
+				<option>لوبیا سبز 601</option>
+				<option>لوبیا سفید 1999</option>
+				<option>لوبیا قرمز 2130</option>
+				<option>لوبیا چشم بلبلی 961</option>
+				<option>لوبیا چیتی 1735</option>
+				<option>لپه 2133</option>
+				<option>لیمو برزیلی 2445</option>
+				<option>لیمو سنگی 235</option>
+				<option>لیمو شیرازی 237</option>
+				<option>لیمو شیرین 233</option>
+				<option>لیمو عمانی 1738</option>
+				<option>ماش 1686</option>
+				<option>ملون 1761</option>
+				<option>موز 316</option>
+				<option>نارنج 253</option>
+				<option>نارنگی 210</option>
+				<option>نبات رنگی 789</option>
+				<option>نبات معمولی 804</option>
+				<option>نبات چوبدار 757</option>
+				<option>نخود 2132</option>
+				<option>نخود فرنگی 602</option>
+				<option>نخود فرنگی 602</option>
+				<option>نخودچی 751</option>
+				<option>نشاسته 718</option>
+				<option>نعناء خشک 720</option>
+				<option>هلو 295</option>
+				<option>هندوانه 171</option>
+				<option>هویج 597</option>
+				<option>پاپریکا 766</option>
+				<option>پرتقال آبگیری 247</option>
+				<option>پرتقال جنوب 255</option>
+				<option>پرتقال خونی 246</option>
+				<option>پرتقال شمال 254</option>
+				<option>پروتئین سویا 719</option>
+				<option>پسته احمد آقایی 794</option>
+				<option>پسته تارد 329</option>
+				<option>پفک هندی 738</option>
+				<option>پودر آویشن 710</option>
+				<option>پودر دارچین 698</option>
+				<option>پودر سیر 709</option>
+				<option>پودر موسیر 715</option>
+				<option>پودر نارگیل 690</option>
+				<option>پودر پیاز 722</option>
+				<option>پودر کاکائو 776</option>
+				<option>پودر گلپر 704</option>
+				<option>پیاز سفید 625</option>
+				<option>پیاز طلایی 623</option>
+				<option>پیاز قرمز 624</option>
+				<option>پیاز نامبر وان 228</option>
+				<option>چاقاله بادام 327</option>
+				<option>چای ترش 798</option>
+				<option>چای سبز 767</option>
+				<option>چغندر 561</option>
+				<option>چوب دارچین 699</option>
+				<option>کاهو آیسبرگ 509</option>
+				<option>کاهو رسمی</option>
+				<option>کاهو فرانسوی</option>
+				<option>کدو 501</option>
+				<option>کرفس 566</option>
+				<option>کشمش 731</option>
+				<option>کشمش 741</option>
+				<option>کشمش پلویی 687</option>
+				<option>کلم بروکلی 562</option>
+				<option>کلم سفید 564</option>
+				<option>کلم قرمز 563</option>
+				<option>کنجد 785</option>
+				<option>کیوی 402</option>
+				<option>گرد لیمو 686</option>
+				<option>گردو با پوست 758</option>
+				<option>گریپ فروت 239</option>
+				<option>گل محمدی 724</option>
+				<option>گل کلم 565</option>
+				<option>گلابی 188</option>
+				<option>گندم پوست کنده 1779</option>
+				<option>گندمک 787</option>
+				<option>گوجه 488</option>
+				<option>گوجه سبز 270</option>
+				<option>گوجه سیاه 2450</option>
+				<option>گوجه نامبر وان</option>
+				<option>گوجه چری 491</option>
+				<option>گوجه چری رنگی 2444</option>
+				<option>گیلاس 286</option>
+			</datalist>
 			<div class="bars">
-				<p>اسکنر معمولی</p>
+				<p>اسکنر ریموتی:</p>
 				<div class="bcode">
 					<svg id="snreset"></svg>
 					<p class="btxt">بازنشانی کارخانه</p>
@@ -41,7 +222,7 @@
 				</div>
 			</div>
 			<div class="bars">
-				<p>اسکنر تفنگی</p>
+				<p>اسکنر تفنگی:</p>
 				<div class="bcode">
 					<svg id="sgreset"></svg>
 					<p class="btxt">بازنشانی کارخانه</p>
