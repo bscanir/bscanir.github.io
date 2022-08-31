@@ -202,7 +202,7 @@ button:hover {
 	text-align: center;
 }
 
-#barfocus {
+.txtfocus {
   position: absolute;
   display: block;
   width: 100%;
@@ -212,7 +212,7 @@ button:hover {
   pointer-events: none;
 }
 
-#barfocus::after {
+.txtfocus::after {
   color: #adadad;
   font-size: 22px;
   display: -webkit-box;
@@ -230,7 +230,7 @@ button:hover {
   padding-top: 3px;
 }
 
-#barfocus::before {
+.txtfocus::before {
   content: "";
   display: block;
   position: absolute;
@@ -246,19 +246,19 @@ button:hover {
 }
 
 
-.txtbox:focus + #barfocus::before {
+.txtbox:focus + .txtfocus::before {
   width: 100%;
 }
 
-.has-val.txtbox + #barfocus::before {
+.has-val.txtbox + .txtfocus::before {
   width: 100%;
 }
 
-.txtbox:focus + #barfocus::after {
+.txtbox:focus + .txtfocus::after {
   color: #a64bf4;
 }
 
-.has-val.txtbox + #barfocus::after {
+.has-val.txtbox + .txtfocus::after {
   color: #a64bf4;
 }
 
