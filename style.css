@@ -171,6 +171,13 @@ button:hover {
 	margin-top: -10px;
 }
 
+.alert{
+	color: red;
+	font-weight: bold;
+	margin-top: -10px;
+	font-size: 16px;
+}
+
 .bg1 {background-color: #3b5998}
 .bg2 {background-color: #1da1f2}
 .bg3 {background-color: #ea4335}
