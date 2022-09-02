@@ -9,197 +9,197 @@
 	<link rel="icon" href="img/icon.png">
 </head>
 <body>
-<div id="main">
-	<div id="frame">
-		<div id="wrap">
-			<h1 id="title">بارکدساز اسنپ</h1>
-			<div class="txtwrap">
-				<p class="txtlabel">شماره بارکد:</p>
-				<input class="txtbox" id="barcode" type="number" autocomplete="off" placeholder="اعداد فارسی و انگلیسی قبوله">
-				<span class="txtfocus"></span>
+	<div id="main">
+		<div id="frame">
+			<div id="wrap">
+				<h1 id="title">بارکدساز اسنپ</h1>
+				<div class="txtwrap">
+					<p class="txtlabel">شماره بارکد:</p>
+					<input class="txtbox" id="barcode" type="number" autocomplete="off" placeholder="اعداد فارسی و انگلیسی قبوله">
+					<span class="txtfocus"></span>
+				</div>
+				<div id="btndiv">
+					<div id="btnwrap">
+						<div id="btnbg"></div>
+						<button id="btninput" onclick="gencode();">ساخت بارکد</button>
+					</div>
+				</div>
+				<div class="bars">
+					<div class="bcode">
+						<svg id="usrcode"></svg>
+					</div>
+				</div>
+				<div class="txtwrap">
+					<p class="txtlabel">لیست کدهای ترازو:</p>
+					<input class="txtbox" type="text" list="fresh" placeholder="اسم میوه، سبزی، آجیل، مرکبات و...">
+					<span class="txtfocus"></span>
+				</div>
+				<datalist id="fresh">
+					<option>آلبالو 287</option>
+					<option>انبه 408</option>
+					<option>انگور سفید بی دانه 145</option>
+					<option>انگور سیاه 143</option>
+					<option>انگور عسگری 150</option>
+					<option>انگور قرمز بی دانه 149</option>
+					<option>انگور کندری 162</option>
+					<option>انگور یاقوتی 152</option>
+					<option>بادمجان 480</option>
+					<option>بادمجان دلمه 479</option>
+					<option>بادمجان رنگی 2446</option>
+					<option>باقالی 603</option>
+					<option>باقالی زرد 694</option>
+					<option>بامیه 571</option>
+					<option>برنج جی ال خوشپخت 2235</option>
+					<option>برنج جی ال شکسته 2234</option>
+					<option>برنج سبلان دودی 2236</option>
+					<option>برنج سبلان طارم 2240</option>
+					<option>برنج مروارید گیلان 802</option>
+					<option>برنج هاشمی 798</option>
+					<option>برنج هندی 801</option>
+					<option>بلال 578</option>
+					<option>به 334</option>
+					<option>خربزه 172</option>
+					<option>خرمالو 332</option>
+					<option>خیار اصفهان 524</option>
+					<option>خیار درختی 520</option>
+					<option>راک ملون 175</option>
+					<option>ریواس 575</option>
+					<option>زردآلو 277</option>
+					<option>سیب زمینی 610</option>
+					<option>سیب سبز 104</option>
+					<option>سیب قرمز 112</option>
+					<option>سیب گلاب 100</option>
+					<option>سیر 621</option>
+					<option>سیر تازه 544</option>
+					<option>شاهپسند 168</option>
+					<option>شلغم 570</option>
+					<option>شلیل 298</option>
+					<option>شلیل انجیری 306</option>
+					<option>شکلات سنگی 771</option>
+					<option>طالبی 174</option>
+					<option>عدس 2131</option>
+					<option>فلفل تند 457</option>
+					<option>فلفل دلمه رنگی 453</option>
+					<option>فلفل دلمه سبز 452</option>
+					<option>فلفل رنگی 2449</option>
+					<option>فلفل کاپی 478</option>
+					<option>فلفل کاپی قرمز 455</option>
+					<option>لوبیا سبز 601</option>
+					<option>لوبیا سفید 1999</option>
+					<option>لوبیا قرمز 2130</option>
+					<option>لوبیا چشم بلبلی 961</option>
+					<option>لوبیا چیتی 1735</option>
+					<option>لپه 2133</option>
+					<option>لیمو برزیلی 2445</option>
+					<option>لیمو سنگی 235</option>
+					<option>لیمو شیرازی 237</option>
+					<option>لیمو شیرین 233</option>
+					<option>لیمو عمانی 1738</option>
+					<option>ماش 1686</option>
+					<option>ملون 1761</option>
+					<option>موز 316</option>
+					<option>نارنج 253</option>
+					<option>نارنگی 210</option>
+					<option>نبات رنگی 789</option>
+					<option>نبات طعم دار 789</option>
+					<option>نبات معمولی 804</option>
+					<option>نبات چوبدار 757</option>
+					<option>نخود 2132</option>
+					<option>نخود فرنگی 602</option>
+					<option>هلو 295</option>
+					<option>هندوانه 171</option>
+					<option>هویج 597</option>
+					<option>پرتقال آبگیری 247</option>
+					<option>پرتقال جنوب 255</option>
+					<option>پرتقال خونی 246</option>
+					<option>پرتقال شمال 254</option>
+					<option>پیاز سفید 625</option>
+					<option>پیاز طلایی 623</option>
+					<option>پیاز قرمز 624</option>
+					<option>چاقاله بادام 327</option>
+					<option>چغندر 561</option>
+					<option>کاهو آیسبرگ 509</option>
+					<option>کاهو رسمی 508</option>
+					<option>کاهو فرانسوی 2448</option>
+					<option>کدو 501</option>
+					<option>کرفس 566</option>
+					<option>کلم بروکلی 562</option>
+					<option>کلم سفید 564</option>
+					<option>کلم قرمز 563</option>
+					<option>کیوی 402</option>
+					<option>گردو با پوست 758</option>
+					<option>گریپ فروت 226</option>
+					<option>گل کلم 565</option>
+					<option>گلابی 188</option>
+					<option>گوجه 488</option>
+					<option>گوجه سبز 270</option>
+					<option>گوجه سیاه 2450</option>
+					<option>گوجه چری 491</option>
+					<option>گوجه چری رنگی 2444</option>
+					<option>گیلاس 286</option>
+				</datalist>
+				<p class="alert">بعد از سرچ، حتماً زبان کیبورد رو انگلیسی کنید.</p>
+				<div class="bars">
+					<p>اسکنر ریموتی:</p>
+					<div class="bcode">
+						<svg id="snreset"></svg>
+						<p class="btxt">بازنشانی کارخانه</p>
+					</div>
+					<div class="bcode">
+						<svg id="snoff"></svg>
+						<p class="btxt">خاموش کردن دستگاه</p>
+					</div>
+				</div>
+				<div class="bars">
+					<p>اسکنر تفنگی:</p>
+					<div class="bcode">
+						<svg id="sgreset"></svg>
+						<p class="btxt">بازنشانی کارخانه</p>
+					</div>
+					<div class="bcode">
+						<svg id="sgbt"></svg>
+						<p class="btxt">کیبورد بلوتوث</p>
+					</div>
+					<div class="bcode">
+						<svg id="sgcr"></svg>
+						<p class="btxt">اضافه کردن CR + LF</p>
+					</div>
+					<div class="bcode">
+						<svg id="sgoff"></svg>
+						<p class="btxt">خاموش کردن دستگاه</p>
+					</div>
+				</div>
+				<p>طراحی با ❤️ توسط <a href="https://instagram.com/sh.masroor" target="_blank" rel="nofollow">حسین مسرور</a><br>از نیروی های داغون هایپراستار تیراژه ۲😁</p>
 			</div>
-			<div id="btndiv">
-				<div id="btnwrap">
-					<div id="btnbg"></div>
-					<button id="btninput" onclick="gencode();">ساخت بارکد</button>
-				</div>
-			</div>
-			<div class="bars">
-				<div class="bcode">
-					<svg id="usrcode"></svg>
-				</div>
-			</div>
-			<div class="txtwrap">
-				<p class="txtlabel">لیست کدهای ترازو:</p>
-				<input class="txtbox" type="text" list="fresh" placeholder="اسم میوه، سبزی، آجیل، مرکبات و...">
-				<span class="txtfocus"></span>
-			</div>
-			<datalist id="fresh">
-				<option>آلبالو 287</option>
-				<option>انبه 408</option>
-				<option>انگور سفید بی دانه 145</option>
-				<option>انگور سیاه 143</option>
-				<option>انگور عسگری 150</option>
-				<option>انگور قرمز بی دانه 149</option>
-				<option>انگور کندری 162</option>
-				<option>انگور یاقوتی 152</option>
-				<option>بادمجان 480</option>
-				<option>بادمجان دلمه 479</option>
-				<option>بادمجان رنگی 2446</option>
-				<option>باقالی 603</option>
-				<option>باقالی زرد 694</option>
-				<option>بامیه 571</option>
-				<option>برنج جی ال خوشپخت 2235</option>
-				<option>برنج جی ال شکسته 2234</option>
-				<option>برنج سبلان دودی 2236</option>
-				<option>برنج سبلان طارم 2240</option>
-				<option>برنج مروارید گیلان 802</option>
-				<option>برنج هاشمی 798</option>
-				<option>برنج هندی 801</option>
-				<option>بلال 578</option>
-				<option>به 334</option>
-				<option>خربزه 172</option>
-				<option>خرمالو 332</option>
-				<option>خیار اصفهان 524</option>
-				<option>خیار درختی 520</option>
-				<option>راک ملون 175</option>
-				<option>ریواس 575</option>
-				<option>زردآلو 277</option>
-				<option>سیب زمینی 610</option>
-				<option>سیب سبز 104</option>
-				<option>سیب قرمز 112</option>
-				<option>سیب گلاب 100</option>
-				<option>سیر 621</option>
-				<option>سیر تازه 544</option>
-				<option>شاهپسند 168</option>
-				<option>شلغم 570</option>
-				<option>شلیل 298</option>
-				<option>شلیل انجیری 306</option>
-				<option>شکلات سنگی 771</option>
-				<option>طالبی 174</option>
-				<option>عدس 2131</option>
-				<option>فلفل تند 457</option>
-				<option>فلفل دلمه رنگی 453</option>
-				<option>فلفل دلمه سبز 452</option>
-				<option>فلفل رنگی 2449</option>
-				<option>فلفل کاپی 478</option>
-				<option>فلفل کاپی قرمز 455</option>
-				<option>لوبیا سبز 601</option>
-				<option>لوبیا سفید 1999</option>
-				<option>لوبیا قرمز 2130</option>
-				<option>لوبیا چشم بلبلی 961</option>
-				<option>لوبیا چیتی 1735</option>
-				<option>لپه 2133</option>
-				<option>لیمو برزیلی 2445</option>
-				<option>لیمو سنگی 235</option>
-				<option>لیمو شیرازی 237</option>
-				<option>لیمو شیرین 233</option>
-				<option>لیمو عمانی 1738</option>
-				<option>ماش 1686</option>
-				<option>ملون 1761</option>
-				<option>موز 316</option>
-				<option>نارنج 253</option>
-				<option>نارنگی 210</option>
-				<option>نبات رنگی 789</option>
-				<option>نبات طعم دار 789</option>
-				<option>نبات معمولی 804</option>
-				<option>نبات چوبدار 757</option>
-				<option>نخود 2132</option>
-				<option>نخود فرنگی 602</option>
-				<option>هلو 295</option>
-				<option>هندوانه 171</option>
-				<option>هویج 597</option>
-				<option>پرتقال آبگیری 247</option>
-				<option>پرتقال جنوب 255</option>
-				<option>پرتقال خونی 246</option>
-				<option>پرتقال شمال 254</option>
-				<option>پیاز سفید 625</option>
-				<option>پیاز طلایی 623</option>
-				<option>پیاز قرمز 624</option>
-				<option>چاقاله بادام 327</option>
-				<option>چغندر 561</option>
-				<option>کاهو آیسبرگ 509</option>
-				<option>کاهو رسمی 508</option>
-				<option>کاهو فرانسوی 2448</option>
-				<option>کدو 501</option>
-				<option>کرفس 566</option>
-				<option>کلم بروکلی 562</option>
-				<option>کلم سفید 564</option>
-				<option>کلم قرمز 563</option>
-				<option>کیوی 402</option>
-				<option>گردو با پوست 758</option>
-				<option>گریپ فروت 226</option>
-				<option>گل کلم 565</option>
-				<option>گلابی 188</option>
-				<option>گوجه 488</option>
-				<option>گوجه سبز 270</option>
-				<option>گوجه سیاه 2450</option>
-				<option>گوجه چری 491</option>
-				<option>گوجه چری رنگی 2444</option>
-				<option>گیلاس 286</option>
-			</datalist>
-			<p class="alert">بعد از سرچ، حتماً زبان کیبورد رو انگلیسی کنید.</p>
-			<div class="bars">
-				<p>اسکنر ریموتی:</p>
-				<div class="bcode">
-					<svg id="snreset"></svg>
-					<p class="btxt">بازنشانی کارخانه</p>
-				</div>
-				<div class="bcode">
-					<svg id="snoff"></svg>
-					<p class="btxt">خاموش کردن دستگاه</p>
-				</div>
-			</div>
-			<div class="bars">
-				<p>اسکنر تفنگی:</p>
-				<div class="bcode">
-					<svg id="sgreset"></svg>
-					<p class="btxt">بازنشانی کارخانه</p>
-				</div>
-				<div class="bcode">
-					<svg id="sgbt"></svg>
-					<p class="btxt">کیبورد بلوتوث</p>
-				</div>
-				<div class="bcode">
-					<svg id="sgcr"></svg>
-					<p class="btxt">اضافه کردن CR + LF</p>
-				</div>
-				<div class="bcode">
-					<svg id="sgoff"></svg>
-					<p class="btxt">خاموش کردن دستگاه</p>
-				</div>
-			</div>
-			<p>طراحی با ❤️ توسط <a href="https://instagram.com/sh.masroor" target="_blank" rel="nofollow">حسین مسرور</a><br>از نیروی های داغون هایپراستار تیراژه ۲😁</p>
 		</div>
 	</div>
-</div>
-<script>
-	JsBarcode("#snreset", "\xC9$$%^1207", {format: "code128", displayValue: false});
-	JsBarcode("#snoff", "\xC9$$%^5300", {format: "code128", displayValue: false});
-	JsBarcode("#sgreset", "\xC909321175", {format: "code128", displayValue: false});
-	JsBarcode("#sgbt", "\xC9SX00", {format: "code128", displayValue: false});
-	JsBarcode("#sgcr", "\xC9090300", {format: "code128", displayValue: false});
-	JsBarcode("#sgoff", "\xC9SX03", {format: "code128", displayValue: false});
-	function fa2en(num) {
-		var fa = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-		var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-		var cache = num;
-		for (var i = 0; i < 10; i++) {
-		var reg = new RegExp(fa[i], 'g');
-			cache = cache.replace(reg, en[i]);
+	<script>
+		JsBarcode("#snreset", "\xC9$$%^1207", {format: "code128", displayValue: false});
+		JsBarcode("#snoff", "\xC9$$%^5300", {format: "code128", displayValue: false});
+		JsBarcode("#sgreset", "\xC909321175", {format: "code128", displayValue: false});
+		JsBarcode("#sgbt", "\xC9SX00", {format: "code128", displayValue: false});
+		JsBarcode("#sgcr", "\xC9090300", {format: "code128", displayValue: false});
+		JsBarcode("#sgoff", "\xC9SX03", {format: "code128", displayValue: false});
+		function fa2en(num) {
+			var fa = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+			var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+			var cache = num;
+			for (var i = 0; i < 10; i++) {
+			var reg = new RegExp(fa[i], 'g');
+				cache = cache.replace(reg, en[i]);
+			}
+			return cache;
 		}
-		return cache;
-	}
-	var input = document.getElementById("barcode");
-	input.addEventListener("keypress", function(event) {
-		if (event.key === "Enter") {
-			event.preventDefault();
-			document.getElementById("btninput").click();
+		var input = document.getElementById("barcode");
+		input.addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				document.getElementById("btninput").click();
+			}
+		});
+		function gencode(){
+			JsBarcode("#usrcode", fa2en(document.getElementById("barcode").value), {format: "code128"});
 		}
-	});
-	function gencode(){
-		JsBarcode("#usrcode", fa2en(document.getElementById("barcode").value), {format: "code128"});
-	}
-</script>
+	</script>
 </body>
 </html>
